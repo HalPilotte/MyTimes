@@ -1,3 +1,6 @@
+body {
+  margin-top: 0;
+}
 header {
   font-family: Verdana;
   font-size: 14px;
@@ -8,6 +11,7 @@ header {
   height: 80px;
   position: fixed;
   z-index: 1;
+  background-color: white;
 }
 .logo {
   display: flex;
@@ -42,7 +46,6 @@ div {
 
 .container {
   display: flex;
-  background-color: skyblue;
   width: 1232px;
   margin: 0 auto 78px auto;
   padding-top: 116px;
@@ -53,9 +56,11 @@ div {
   flex-direction: column;
   margin-right: 32px;
 }
+
 .lead-story
 .image-content {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
+  height: 300px;
 }
 .lead-story
 .image-content span {
@@ -63,6 +68,10 @@ div {
   font-weight: bold;
   font-size: 40px;
   color: white;
+}
+.image-content.earth {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
+  height: 300px;
 }
 .column.medium {
   width: 300px;
@@ -72,7 +81,11 @@ div {
   width: 240px;
   margin-right: 32px;
 }
-span {
+.image-content span {
   display: flex;
   justify-content: flex-start;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  font-family: georgia;
 }
